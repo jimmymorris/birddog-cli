@@ -36,34 +36,34 @@ To install node package dependences.
   </thead>
   <tbody>
     <tr>
-      <td nowrap>`url`</td>
+      <td nowrap>url</td>
       <td>string</td>
-      <td>`https://www.sabreshospitality.com`</td>
-      <td>The website url that you would like to crawl. Has alias `-u`</td>
+      <td>https://sabreshospitality.com</td>
+      <td>The website url that you would like to crawl. Has alias *-u*</td>
     </tr>
     <tr>
-      <td nowrap>`directpath`</td>
+      <td nowrap>directpath</td>
       <td>string</td>
-      <td>`https://www.sabreshospitality.com/sitemap.xml`</td>
-      <td>The direct sitemap xml path that you would like to crawl. Only supports supports the [standard XML sitemap protocol]((https://www.sitemaps.org/index.html)). Has alias `-d`</td>
+      <td>https://sabreshospitality.com/sitemap.xml</td>
+      <td>The direct sitemap xml path that you would like to crawl. Only supports supports the [standard XML sitemap protocol]((https://www.sitemaps.org/index.html)). Has alias *-d*</td>
     </tr>
     <tr>
-      <td nowrap>`sitemap`</td>
+      <td nowrap>sitemap</td>
       <td>boolean</td>
-      <td>`true`</td>
-      <td>If `true` uses sitemap.xml, if `false` uses `?SHOWXML` for CDE sites. Has alias `-s`</td>
+      <td>true</td>
+      <td>If true uses sitemap.xml, if false uses ?SHOWXML for CDE sites. Has alias *-s*</td>
     </tr>
     <tr>
-      <td nowrap>`maxConnections`</td>
+      <td nowrap>maxConnections</td>
       <td>integer</td>
-      <td>`10`</td>
-      <td>Crawler.js option: Size of the worker pool. Has alias `-m`</td>
+      <td>10</td>
+      <td>Crawler.js option: Size of the worker pool. Has alias *-m*</td>
     </tr>
     <tr>
-      <td nowrap>`retries`</td>
+      <td nowrap>retries</td>
       <td>number</td>
-      <td>`3`</td>
-      <td>Crawler.js option: Number of retries if the request fails. Has alias `-r`</td>
+      <td>3</td>
+      <td>Crawler.js option: Number of retries if the request fails. Has alias *-r*</td>
     </tr>
   </tbody>
 </table>
