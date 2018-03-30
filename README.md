@@ -70,25 +70,11 @@ To install node package dependences.
 
 ### Dependencies
 
-1. *[cheerio](https://www.npmjs.com/package/cheerio)* v1.0.0-rc.2
-
-Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
-
-2. *[cli-spinner](https://www.npmjs.com/package/cli-spinner)* v0.2.8
-
-Spinners for use in the terminal
-
-3. *[crawler](https://www.npmjs.com/package/crawler)* v1.1.2
-
-Crawler is a web spider written with Nodejs.
-
-4. *[minimist](https://www.npmjs.com/package/minimist)* v0.0.8
-
-Parse argument options
-
-5. *[request](https://www.npmjs.com/package/request)* v2.83.0
-
-Simplified HTTP request client.
+1. *[cheerio](https://www.npmjs.com/package/cheerio)* v1.0.0-rc.2 -- Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
+2. *[cli-spinner](https://www.npmjs.com/package/cli-spinner)* v0.2.8 -- Spinners for use in the terminal
+3. *[crawler](https://www.npmjs.com/package/crawler)* v1.1.2 -- Crawler is a web spider written with Nodejs.
+4. *[minimist](https://www.npmjs.com/package/minimist)* v0.0.8 -- Parse argument options
+5. *[request](https://www.npmjs.com/package/request)* v2.83.0 -- Simplified HTTP request client.
 
 
 ### What Are Sitemaps?
