@@ -27,7 +27,7 @@ To install node package dependences.
 
 ### Settings
 
-<table>
+<table style="width: 100%;">
   <thead>
     <th>Options</th>
     <th>Type</th>
