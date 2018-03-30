@@ -7,7 +7,7 @@ const Spinner  = require('cli-spinner').Spinner;
 const options = Minimist(process.argv.slice(2), {
   alias: { u: 'url' },
   default: {
-    url: 'https://www.sabre.com', // site URL you want to crawl
+    url: 'https://www.sabrehospitality.com', // site URL you want to crawl
     sitemap: true // if set to true it will pull in the sitemap.xml file, otherwise use ?SHOWXML of the provided URL
   }
 });
