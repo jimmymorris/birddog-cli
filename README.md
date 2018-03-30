@@ -27,25 +27,69 @@ To install node package dependences.
 
 ### Settings
 
-| Options            | Type           | Default                                         | Description                                                                                                                                                                 |
-| -------------------|:--------------:|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| `--url`            | string         | `https://www.sabreshospitality.com`             | The website url that you would like to crawl. Has alias `-u`                                                                                                                |
-| `--directpath`     | string         | `https://www.sabreshospitality.com/sitemap.xml` | The direct sitemap xml path that you would like to crawl. Only supports supports the [standard XML sitemap protocol]((https://www.sitemaps.org/index.html)). Has alias `-d` |
-| `--sitemap`        | boolean        | `true`                                          | If `true` uses sitemap.xml, if `false` uses `?SHOWXML` for CDE sites. Has alias `-s`                                                                                        |
-| `--maxConnections` | number         | `10`                                            | Crawler.js option: Size of the worker pool. Has alias `-m`                                                                                                                  |
-| `--retries`        | number         | `3`                                             | Crawler.js option: Number of retries if the request fails. Has alias `-r`                                                                                                   |
+<table>
+  <thead>
+    <th>Options</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td nowrap>`url`</td>
+      <td>string</td>
+      <td>`https://www.sabreshospitality.com`</td>
+      <td>The website url that you would like to crawl. Has alias `-u`</td>
+    </tr>
+    <tr>
+      <td nowrap>`directpath`</td>
+      <td>string</td>
+      <td>`https://www.sabreshospitality.com/sitemap.xml`</td>
+      <td>The direct sitemap xml path that you would like to crawl. Only supports supports the [standard XML sitemap protocol]((https://www.sitemaps.org/index.html)). Has alias `-d`</td>
+    </tr>
+    <tr>
+      <td nowrap>`sitemap`</td>
+      <td>boolean</td>
+      <td>`true`</td>
+      <td>If `true` uses sitemap.xml, if `false` uses `?SHOWXML` for CDE sites. Has alias `-s`</td>
+    </tr>
+    <tr>
+      <td nowrap>`maxConnections`</td>
+      <td>integer</td>
+      <td>`10`</td>
+      <td>Crawler.js option: Size of the worker pool. Has alias `-m`</td>
+    </tr>
+    <tr>
+      <td nowrap>`retries`</td>
+      <td>number</td>
+      <td>`3`</td>
+      <td>Crawler.js option: Number of retries if the request fails. Has alias `-r`</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Dependencies
+
 1. *[cheerio](https://www.npmjs.com/package/cheerio)* v1.0.0-rc.2
-⋅⋅⋅Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
+
+Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
+
 2. *[cli-spinner](https://www.npmjs.com/package/cli-spinner)* v0.2.8
-⋅⋅⋅Spinners for use in the terminal
+
+Spinners for use in the terminal
+
 3. *[crawler](https://www.npmjs.com/package/crawler)* v1.1.2
-⋅⋅⋅Crawler is a web spider written with Nodejs.
+
+Crawler is a web spider written with Nodejs.
+
 4. *[minimist](https://www.npmjs.com/package/minimist)* v0.0.8
-⋅⋅⋅Parse argument options
+
+Parse argument options
+
 5. *[request](https://www.npmjs.com/package/request)* v2.83.0
-⋅⋅⋅Simplified HTTP request client.
+
+Simplified HTTP request client.
+
 
 ### What Are Sitemaps?
 
