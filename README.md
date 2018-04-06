@@ -10,11 +10,12 @@ To install node package dependences.
 
 ## Examples
 
-#### Simplest Run Using Default Settings
+#### Simplest Run Using Default Settings in Birddog.js
 ```node birddog.js```
 
-#### Set the Website URL
+#### Set the Website URL.
 ```node birddog.js --url https://www.mandarinoriental.com```
+This will look for and run against the sitemap.xml file
 
 #### Use the SHOWXML of a CDE based site
 ```node birddog.js --url https://fontainebleau.com/ --sitemap false```
@@ -24,6 +25,7 @@ To install node package dependences.
 
 #### Using a Direct URL Path
 ```node birddog.js --d https://fontainebleau.com/fontainebleau-miami-beach-xml-sitemap.xml```
+In the event that the sitemap.xml file isn't named as such.
 
 ### Settings
 
