@@ -6,28 +6,40 @@ Simple Node.js website crawler that users either the ?SHOWXML or the sitemap.xml
 
 To install node package dependences.
 
-```npm install package.json```
+```
+npm install package.json
+```
 
 ## Examples
 
 #### Simplest
-```node birddog.js```
+```
+node birddog.js
+```
 
 Runs using default options in Birddog.js
 
 #### Set the Website URL.
-```node birddog.js --url https://www.mandarinoriental.com```
+```
+node birddog.js --url https://www.mandarinoriental.com
+```
 
 This will look for and run against the sitemap.xml file
 
 #### Use the SHOWXML of a CDE based site
-```node birddog.js --url https://fontainebleau.com/ --sitemap false```
+```
+node birddog.js --url https://fontainebleau.com/ --sitemap false
+```
 
 #### Using Abbreviated Options
-```node birddog.js --u https://www.mandarinoriental.com/ --s false```
+```
+node birddog.js --u https://www.mandarinoriental.com/ --s false
+```
 
 #### Using a Direct URL Path
-```node birddog.js --d https://fontainebleau.com/fontainebleau-miami-beach-xml-sitemap.xml```
+```
+node birddog.js --d https://fontainebleau.com/fontainebleau-miami-beach-xml-sitemap.xml
+```
 
 In the event that the sitemap.xml file isn't named as such.
 
