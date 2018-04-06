@@ -4,7 +4,7 @@ Simple Node.js website crawler that users either the ?SHOWXML or the sitemap.xml
 
 ## Installation
 
-To install node package dependences.
+To install node package dependences run this in the directory that Birddog sits.
 
 ```
 npm install package.json
