@@ -8,8 +8,9 @@
   "author": "Jackie Keiser and Jimmy Morris",
   "license": "ISC",
   "devDependencies": {
-    "cherrio": "^0.22.0",
+    "cheerio": "^0.22.0",
     "crawler": "^1.1.2",
+    "minimist": "^1.2.0",
     "request": "^2.83.0"
   },
   "dependencies": {
