@@ -43,7 +43,7 @@ Request(sitemap, function (error, response, html) {
     if(response.headers['content-type'] == 'text/xml') {
       $ = Cheerio.load(html);
 
-      if(sitemap) {
+      if(options.sitemap) {
         $('url').each(function (i, page) {
             pageQueue.push($(page).find('loc').text());
         });
