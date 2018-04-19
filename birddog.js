@@ -3,16 +3,18 @@ const Request  = require('request');
 const Cheerio  = require('cheerio');
 const Minimist = require('minimist');
 const Spinner  = require('cli-spinner').Spinner;
-
+const Express = require('express');
 const options = Minimist(process.argv.slice(2), {
-  alias: { u: 'url' },
+  alias: { u: 'url', 'd': 'directpath', 's': 'sitemap' },
   default: {
     url: 'https://www.sabrehospitality.com', // site URL you want to crawl
+    directpath: '', // direct URL to sitemap XML file.
     sitemap: true // if set to true it will pull in the sitemap.xml file, otherwise use ?SHOWXML of the provided URL
   }
 });
 const badStatusCodes = [404, 500, 501, 502];
 const domain = options.url;
+let app = Express.createServer();
 let sitemap = '',
     $,
     failedURLs = [],
@@ -31,10 +33,14 @@ spinner.setSpinnerTitle('Getting pages to parse... %s');
 spinner.setSpinnerString(9);
 spinner.start();
 
-if(options.sitemap) {
-  sitemap = domain.slice(-1) !== '/' ? domain + '/sitemap.xml' : domain + 'sitemap.xml'
+if(options.directpath === '') {
+  if(options.sitemap) {
+    sitemap = domain.slice(-1) !== '/' ? domain + '/sitemap.xml' : domain + 'sitemap.xml'
+  } else {
+    sitemap = domain + '?SHOWXML';
+  }
 } else {
-  sitemap = domain + '?SHOWXML';
+  sitemap = options.directpath;
 }
 
 Request(sitemap, function (error, response, html) {
@@ -79,7 +85,7 @@ Request(sitemap, function (error, response, html) {
         });
       });
     } else {
-      console.error('content-type is not XML ¯\_(ツ)_/¯');
+      console.error('content-type is not XML ¯\\_(ツ)_/¯');
     }
   } else {
    spinner.stop(true);
